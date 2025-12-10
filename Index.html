@@ -1,0 +1,136 @@
+﻿<!--Declara que el navegador debe esperar un documento de tipo HTML5-->
+<!DOCTYPE html>
+<!--Especifica el idioma del contenido de los elementos, en este caso - Español-->
+<html lang="es">
+
+<head>
+    <!--Le dice al navegador qué tipo de codificación para usar-->
+    <meta charset="utf-8">
+    <!--Título de la página-->
+    <title> Caso Práctico Tema 1 "Creación de página web sencilla"</title>
+    <!--Vincula un documento de estilos externo-->
+    <link rel="stylesheet" type="text/css" href="style/syle.css">
+</head>
+
+<body>
+    <!--Contiene el contenido de la página-->
+    <main id="inicio">
+        <!--Una seccion que contiene una imagen y un menú-->
+        <section id="seccion_1">
+            <!--Inserta una imagen con atributo alt que el navegador muestra se la imagen no se carga-->
+            <img href="img/img.jpg" alt="logotipo" title="Logotipo">
+            <!--Crea un enlace vacio-->
+            <a href="">
+                977207030
+            </a>
+            <!--Crea un menú con enlaces a diferentes partes de la página-->
+            <nav>
+                <!--Crea una lista no ordenada-->
+                <ul>
+                    <!--un elemento de la lista con enlace a una seccion interna-->
+                    <a href="#seccion_2">
+                        <li>Servicios</li>
+                    </a>
+                    <!--un elemento de la lista con enlace a una seccion interna-->
+                    <a href="#seccion_3">
+                        <li>Blog</li>
+                    </a>
+                    <!--un elemento de la lista con enlace a una seccion interna-->
+                    <a href="#seccion_4">
+                        <li>Contacto</li>
+                    </a>
+                </ul>
+            </nav>
+        </section>
+        <!--Especifica un contenido independiente y autónomo-->
+        <article>
+            <!--Una seccion que contiene un título, multiple párrafos, un vídeo y enlaces-->
+            <section id="seccion_2">
+                <!--representa un contenedor para contenido introductorio-->
+                <header>
+                    <!--Un título-->
+                    <h1>Un título muy representativo</h1>
+                    <!--Un párrafo-->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                    <!--Un párrafo-->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </header>
+                <!--Una seccion que contiene un vídeo, un título, un párrafo y un enlace vacio-->
+                <section>
+                    <!--Inserta un vídeo con una mensaje de advertencia para navegadores que no soportan vídeos-->
+                    <video width="320" height="140" controls>
+                        <source src="multimedia/movie.mp4" type="video/mp4">
+                        <source src="multimedia/movie.ogg" type="video/ogg">
+                        Su navegador no soporta la etiqueta de vídeo.
+                    </video>
+                    <!--Un título-->
+                    <h2>Un título 2</h2>
+                    <!--Un párrafo-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <!--Inserta un enlace vacio-->
+                    <a href="">Saber más</a>
+                </section>
+            </section>
+        </article>
+        <!--Especifica un contenido independiente y autónomo-->
+        <article id="seccion_3">
+            <!--Una seccion que contiene un título, un párrafo y un enlace-->
+            <section>
+                <h3>Un título 3</h3>
+                <!--Un párrafo-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <!--Inserta un enlace vacio-->
+                <a href="">Saber más</a>
+            </section>
+            <!--Inserta un audio con una mensaje de advertencia para navegadores que no soportan audios-->
+            <audio controls>
+                <source src="multimedia/audio.mp3" type="audio/mpeg">
+                <source src="multimedia/audio.ogg" type="audio/ogg">
+                Su navegador no soporta la etiqueta de audio.
+            </audio>
+        </article>
+        <!--Define contenido aparte del contenido en el que se coloca-->
+        <aside>
+            <!--Una seccion que contiene párrafos-->
+            <section>
+                <!--Un título-->
+                <h4>Sobri mí</h4>
+                <!--Un párrafo-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </section>
+            <!--Una seccion que contiene un título y multiple párrafos-->
+            <section id="seccion_4">
+                <!--Un título-->
+                <h5>Horarios</h5>
+                <!--Un párrafo-->
+                <p>
+                    Mañanas: 9.00 - 13.00
+                </p>
+                <!--Un párrafo-->
+                <p>
+                    Tardes: 16.00 - 19.00
+                </p>
+                <!--Un párrafo-->
+                <p>
+                    Domingo: cerrado
+                </p>
+            </section>
+            <!--Una seccion que contiene imágenes-->
+            <section>
+                <img src="img/img.jpg" alt="ISO9001" />
+                <img src="img/img.jpg" alt="ISO14001" />
+            </section>
+        </aside>
+        <!--Pie de la página-->
+        <footer> <a href="#inicio">Subir</a> </footer>
+    </main>
+
+</body>
+
+</html>
